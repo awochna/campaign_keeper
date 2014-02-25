@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225204206) do
+ActiveRecord::Schema.define(version: 20140225223308) do
 
   create_table "campaigns", force: true do |t|
     t.string   "name"
@@ -27,6 +27,35 @@ ActiveRecord::Schema.define(version: 20140225204206) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "encounter_id"
+    t.string   "hit_points"
+    t.integer  "strength"
+    t.integer  "dexterity"
+    t.integer  "constitution"
+    t.integer  "intelligence"
+    t.integer  "wisdom"
+    t.integer  "charisma"
+    t.string   "melee"
+    t.string   "ranged"
+    t.string   "special_attacks"
+    t.integer  "init"
+    t.string   "senses"
+    t.string   "size"
+    t.string   "type"
+    t.string   "alignment"
+    t.integer  "natural_armor"
+    t.integer  "fortitude"
+    t.integer  "reflex"
+    t.integer  "will"
+    t.string   "damage_reduction"
+    t.string   "immunities"
+    t.integer  "speed"
+    t.integer  "space"
+    t.integer  "reach"
+    t.integer  "base_attack"
+    t.integer  "cmb"
+    t.integer  "cmd"
+    t.string   "languages"
+    t.string   "special_abilities"
   end
 
   create_table "encounters", force: true do |t|
